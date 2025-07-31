@@ -35,7 +35,7 @@ const useLocalStorage = (key, initialValue) => {
 const App = () => {
   const [darkMode, setDarkMode] = useLocalStorage('darkMode', false);
   const [language, setLanguage] = useLocalStorage('language', 'ko');
-  const [activeMenu, setActiveMenu] = useState('chats');
+  const [activeMenu, setActiveMenu] = useState('dashboard');
   const [selectedChat, setSelectedChat] = useState(mockChats[0]);
 
   useEffect(() => {
